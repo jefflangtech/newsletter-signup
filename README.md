@@ -47,13 +47,41 @@ Users should be able to:
 - Flexbox
 - CSS Grid
 - Mobile-first workflow
-- [React](https://reactjs.org/) - JS library
-- [Next.js](https://nextjs.org/) - React framework
-- [Styled Components](https://styled-components.com/) - For styles
 
-### What I learned
+### Step by step
 
-Use this section to recap over some of your major learnings while working through this project. Writing these out and providing code samples of areas you want to highlight is a great way to reinforce your own knowledge.
+**Layout notes**
+![](public/images/layout-notes.jpg)
+![](public/images/mobile-layout-notes.jpg)
+
+I saw a Kevin Powell video in which he remarked that he'll print out layouts and then draw on them by hand. I thought maybe I could do the same in photoshop and so far it's worked out pretty good.
+
+For **desktop** it looks like there is a pretty standard padding that gets used around the edges of the component, as well as inline padding for the text portion of the grid, plus some additional left padding for both the left and right sides. I'm going to do a 2 cell grid, and the text portion will have its own grid as well.
+
+**Mobile** is pretty interesting. The grid can shift to 1 column and I'm thinking that what I will do is transition the phone layout to have an additional padding like the desktop, as well as show the background color, when it expands out to a tablet view (768px).
+
+It looks like the 'footer' portion where the subscribe/dismiss buttons are is the same dimension, so that container can have one style used across 2 different states. I think even the h1 is styled the same, with the same spacing, so it's a matter of a smaller image and less text shown. So when it shrinks down in content shown I'll want it to auto-adjust the top and bottom margins.
+
+AND IS THAT GOING TO WORK WITH MY GRID IDEA?! Time to find out haha!
+
+**Project plan**
+I'm going to build this as an SPA starting with the mobile layout first and then migrating up in size. There isn't a tablet view provided so I'll modify the mobile view for tablet. Grid seems the best way to organize the sections of the component, especially as they move. I'll be trying a Regex implementation for email validation...and I'll try to understand it at the same time!
+
+The list items will have custom decorations which are the provided SVG checkmarks. I can set those up as ::before pseudoelements.
+
+The action for the component is:
+Email validation -> submit & load new content -> Submit (dismiss button) & reload page
+
+
+
+
+
+
+
+1. Project plan (0:31)
+2. Layout notes (0:44)
+3. Design system - the readme file provided didn't seem to match (0:23)
+
 
 To see how you can add code snippets, see below:
 
