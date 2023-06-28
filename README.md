@@ -72,15 +72,14 @@ The list items will have custom decorations which are the provided SVG checkmark
 The action for the component is:
 Email validation -> submit & load new content -> Submit (dismiss button) & reload page
 
-
-
-
-
-
-
 1. Project plan (0:31)
 2. Layout notes (0:44)
 3. Design system - the readme file provided didn't seem to match (0:23)
+4. Create a task list (0:10)
+5. HTML and styles for mobile view 
+
+
+
 
 
 To see how you can add code snippets, see below:

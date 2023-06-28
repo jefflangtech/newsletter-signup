@@ -16,32 +16,35 @@
   <title>Newsletter Signup</title>
 </head>
 <body>
+  <!-- Overlay for testing -->
+  <img id="mobile-overlay" src="public/images/mobile-overlay.png" alt="Overlay for testing">
+  <!-- End testing -->
 
-  <!-- Sign-up form start -->
-
-  Stay updated!
-
-  Join 60,000+ product managers receiving monthly updates on:
-
-  Product discovery and building what matters
-  Measuring to ensure updates are a success
-  And much more!
-
-  Email address
-  email@company.com
-
-  Subscribe to monthly newsletter
-
-  <!-- Sign-up form end -->
-
-  <!-- Success message start -->
-
-  Thanks for subscribing!
-
-  A confirmation email has been sent to ash@loremcompany.com. 
-  Please open it and click the button inside to confirm your subscription.
-
-  Dismiss message
+  <div class="grid-wrapper">
+    <main class="outer-padding">
+      <div id="hero-image-wrapper">
+        <img src="public/images/illustration-sign-up-mobile.svg" alt="Graphic image for header illustration">
+      </div>
+      <div id="primary-content">
+        <div id="info-wrapper" class="margin-block">
+          <h1>Stay updated!</h1>
+          <p>Join 60,000+ product managers receiving monthly updates on:</p>
+          <ul>
+            <li class="relative">Product discovery and building what matters</li>
+            <li class="relative">Measuring to ensure updates are a success</li>
+            <li class="relative">And much more!</li>
+          </ul>
+        </div>
+        <div id="email-wrapper" class="margin-block">
+          <form id="email-capture" action="/" method="post">
+            <label for="email" class="body-small">Email address</label>
+            <input type="text" name="email" id="email" placeholder="email@company.com">
+            <input class="btn-primary" type="submit" value="Subscribe to monthly newsletter">
+          </form>
+        </div>
+      </div>
+    </main>
+  </div>
   <script src="public/js/index.js"></script>
 </body>
 </html>

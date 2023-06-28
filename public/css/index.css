@@ -2,7 +2,7 @@
   - Root styles
   - Utility classes
   - Document level styles
-  
+  - Element level styles
 
 
 */
@@ -23,6 +23,27 @@ html {
   font-family: 'Roboto', sans-serif;
 }
 
+/* For testing */
+body {
+  position: relative;
+}
+#mobile-overlay {
+  width: 375px;
+  height: 842px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0.45;
+  z-index: 100;
+  display: none;
+}
+/* End testing */
+
+/* Document level styles */
+body {
+  background-color: var(--bg-pale-navy);
+  color: var(--dark-navy);
+}
 h1 {
   font-size: 2.5rem;
   line-height: 2.5rem;
@@ -34,11 +55,85 @@ button {
   line-height: 1.5rem;
 }
 
-.bold {
+/* Utility classes */
+.body-small {
   font-weight: 700;
+  font-size: 0.75rem;
+}
+.outer-padding > * {
+  padding: 1.5rem;
+}
+.margin-block {
+  margin-block: 1rem;
+}
+.relative {
+  position: relative;
 }
 
-btn-primary:hover {
+.btn-primary {
+  border: none;
+  border-radius: 0.5rem;
+  color: var(--white);
+  background-color: var(--dark-navy);
+  font-weight: 700;
+  padding-block: 1rem;
+}
+.btn-primary:hover {
   background: var(--btn-gradient);
   box-shadow: 0px 16px 32px 0px rgba(255, 97, 85, 0.50);
+}
+
+/* Element level styles */
+main {
+  background-color: var(--white);
+}
+#info-wrapper {
+  margin-bottom: 2.5rem;
+}
+#info-wrapper > * {
+  margin-bottom: 1.5rem;
+}
+ul {
+  padding-left: 0;
+}
+li {
+  list-style: none;
+  padding-left: 2.31rem;
+  margin-bottom: 0.625rem;
+}
+li::before {
+  content: url('../images/icon-list.svg');
+  width: 21px;
+  height: 21px;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+#email-capture > * {
+  display: block;
+  width: 100%;
+  margin-bottom: 0.6em;
+}
+#email-capture > *:last-child {
+  margin-top: 1.5em;
+}
+#email {
+  border: 1px solid var(--grey-25);
+  border-radius: 0.5rem;
+  padding-left: 1.5rem;
+  padding-block: 1rem;
+}
+#email::placeholder {
+  color: var(--dark-navy);
+  opacity: 0.5;
+}
+
+/* Media queries */
+@media (max-width: 768px) {
+  #hero-image-wrapper {
+    padding: 0;
+  }
+  #hero-image-wrapper > img {
+    width: 100%;
+  }
 }
