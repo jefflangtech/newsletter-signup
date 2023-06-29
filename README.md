@@ -76,7 +76,7 @@ Email validation -> submit & load new content -> Submit (dismiss button) & reloa
 2. Layout notes (0:44)
 3. Design system - the readme file provided didn't seem to match (0:23)
 4. Create a task list (0:10)
-5. HTML and styles for mobile view 
+5. HTML and styles for mobile view (1:35)
 
 
 

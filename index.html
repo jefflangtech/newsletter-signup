@@ -37,9 +37,12 @@
         </div>
         <div id="email-wrapper" class="margin-block">
           <form id="email-capture" action="/" method="post">
-            <label for="email" class="body-small">Email address</label>
-            <input type="text" name="email" id="email" placeholder="email@company.com">
-            <input class="btn-primary" type="submit" value="Subscribe to monthly newsletter">
+            <div class="label-wrapper">
+              <label for="email" class="body-small">Email address</label>
+              <p id="email-error" class="error body-small hidden">Valid email required</p>
+            </div>
+            <input class="email" type="text" name="email" id="email" placeholder="email@company.com">
+            <input id="email-submit" class="btn-primary" type="submit" value="Subscribe to monthly newsletter">
           </form>
         </div>
       </div>
