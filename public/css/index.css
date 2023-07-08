@@ -142,7 +142,27 @@ li::before {
 
 
 /* Media queries */
-@media (max-width: 768px) {
+@media (min-width: 550px) and (max-width: 768px) {
+  .grid-wrapper {
+    position: relative;
+    top: 50vh;
+    transform: translateY(-50%);
+  }
+  main {
+    max-width: 550px;
+    margin: auto;
+    border-radius: 2.25rem;
+    overflow:hidden;
+  }
+  #hero-image-wrapper {
+    padding: 0;
+  }
+  #hero-image-wrapper > img {
+    width: 100%;
+  }
+}
+
+@media (max-width: 550px) {
   #hero-image-wrapper {
     padding: 0;
   }

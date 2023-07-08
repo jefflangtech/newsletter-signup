@@ -77,6 +77,9 @@ Email validation -> submit & load new content -> Submit (dismiss button) & reloa
 3. Design system - the readme file provided didn't seem to match (0:23)
 4. Create a task list (0:10)
 5. HTML and styles for mobile view (1:35)
+6. 
+7. Email validation with regex (2:45) - also implemented some basic testing
+8. Media queries for tablet view (0:27)
 
 
 

@@ -59,6 +59,7 @@ primaryContent.addEventListener('click', (event) => {
 
 // For testing purposes
 const $f = {
+  emailForm: emailForm,
   validateEmail: validateEmail
 };
 
@@ -66,4 +67,4 @@ export default $f;
 
 import testModule from './test.js';
 
-testModule();
+// testModule();

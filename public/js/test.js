@@ -23,6 +23,9 @@ const testModule = function() {
 
     }
   }
+
+  console.dir($f.emailForm);
+
 };
 
 export default testModule;
