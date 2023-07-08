@@ -1,3 +1,5 @@
+
+
 const primaryContent = document.getElementById('primary-content');
 const emailForm = {
   input: document.getElementById('email'),
@@ -16,6 +18,11 @@ const toggleClass = function(style, ...elements) {
 
 const validateEmail = function(emailInput) {
 
+  if(typeof emailInput !== 'string' || emailInput.length > 254) {
+    return false;
+  }
+
+  let email = emailInput.trim();
   let pattern = /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,6}$/;
   // Regex pattern starts and ends with '/'
   // ^ this means start at the beginning of the string
@@ -27,7 +34,7 @@ const validateEmail = function(emailInput) {
   // [a-zA-Z]{2,6} means match any lower/uppercase letters of 2-6 chars
   // $ means must end at end of string
 
-  return pattern.test(emailInput);
+  return pattern.test(email);
 
 };
 
@@ -50,3 +57,13 @@ primaryContent.addEventListener('click', (event) => {
 
 });
 
+// For testing purposes
+const $f = {
+  validateEmail: validateEmail
+};
+
+export default $f;
+
+import testModule from './test.js';
+
+testModule();
