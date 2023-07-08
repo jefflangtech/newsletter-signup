@@ -37,6 +37,16 @@ body {
   z-index: 100;
   display: none;
 }
+#desktop-overlay {
+  width: 1440px;
+  height: 1080px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0.45;
+  z-index: 100;
+  display: none;
+}
 /* End testing */
 
 /* Document level styles */
@@ -57,6 +67,11 @@ button {
 }
 :focus-visible {
   outline: none;
+}
+.grid-wrapper {
+  position: relative;
+  top: 50vh;
+  transform: translateY(-50%);
 }
 
 /* Utility classes */
@@ -90,6 +105,10 @@ button {
 /* Element level styles */
 main {
   background-color: var(--white);
+  display: grid;
+}
+#desktop-hero-img {
+  display: none;
 }
 #info-wrapper {
   margin-bottom: 2.5rem;
@@ -142,23 +161,53 @@ li::before {
 
 
 /* Media queries */
-@media (min-width: 550px) and (max-width: 768px) {
+@media (min-width: 977px) {
   .grid-wrapper {
-    position: relative;
-    top: 50vh;
-    transform: translateY(-50%);
+    max-width: 58rem;
   }
   main {
+    grid-template-columns: 1fr 1fr;
+  }
+  h1 {
+    font-size: 3.5rem;
+    line-height: 3.5rem;
+  }
+  #hero-image-wrapper {
+    order: 2;
+  }
+  #primary-content {
+    order: 1;
+    margin-block: auto;
+    padding-right: 0;
+  }
+  #mobile-hero-img {
+    display: none;
+  }
+  #desktop-hero-img {
+    display: block;
+    min-width: 25rem;
+  }
+  .inner-padding > * {
+    padding-left: 4rem;
+  }
+}
+@media (min-width: 550px) and (max-width: 976px) {
+  .grid-wrapper {
     max-width: 550px;
-    margin: auto;
-    border-radius: 2.25rem;
-    overflow:hidden;
   }
   #hero-image-wrapper {
     padding: 0;
   }
   #hero-image-wrapper > img {
     width: 100%;
+  }
+}
+
+@media (min-width: 550px) {
+  .grid-wrapper {
+    margin: auto;
+    border-radius: 2.25rem;
+    overflow:hidden;
   }
 }
 

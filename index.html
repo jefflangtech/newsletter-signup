@@ -17,13 +17,17 @@
 </head>
 <body>
   <!-- Overlay for testing -->
-  <img id="mobile-overlay" src="public/images/mobile-overlay.png" alt="Overlay for testing">
+  <div class="overlays">
+    <img id="mobile-overlay" src="public/images/mobile-overlay.png" alt="Overlay for testing">
+    <img id="desktop-overlay" src="public/images/desktop-overlay.png" alt="Overlay for desktop testing">
+  </div>
   <!-- End testing -->
 
   <div class="grid-wrapper">
-    <main class="outer-padding">
+    <main class="outer-padding inner-padding">
       <div id="hero-image-wrapper">
-        <img src="public/images/illustration-sign-up-mobile.svg" alt="Graphic image for header illustration">
+        <img id="mobile-hero-img" src="public/images/illustration-sign-up-mobile.svg" alt="Graphic image for header illustration">
+        <img id="desktop-hero-img" src="public/images/illustration-sign-up-desktop.svg" alt="Graphic image for illustration in desktop view">
       </div>
       <div id="primary-content">
         <div id="info-wrapper" class="margin-block">

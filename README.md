@@ -80,6 +80,7 @@ Email validation -> submit & load new content -> Submit (dismiss button) & reloa
 6. 
 7. Email validation with regex (2:45) - also implemented some basic testing
 8. Media queries for tablet view (0:27)
+9. Media queries for desktop view (1:00)
 
 
 
