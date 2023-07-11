@@ -1,5 +1,3 @@
-
-
 const primaryContent = document.getElementById('primary-content');
 const emailForm = {
   input: document.getElementById('email'),
@@ -50,6 +48,7 @@ primaryContent.addEventListener('click', (event) => {
       toggleClass('hidden', emailForm.error);
     } else {
       console.log('Passed the test!');
+      // history.pushState(null, "", 'index.html');
     }
 
   }
