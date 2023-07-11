@@ -79,6 +79,9 @@ button {
   font-weight: 700;
   font-size: 0.75rem;
 }
+.body-bold {
+  font-weight: 700;
+}
 .outer-padding > * {
   padding: 1.5rem;
 }
@@ -190,6 +193,9 @@ li::before {
   .inner-padding > * {
     padding-left: 4rem;
   }
+  .response {
+    max-width: 31.5rem;
+  }
 }
 @media (min-width: 550px) and (max-width: 976px) {
   .grid-wrapper {
@@ -224,6 +230,15 @@ li::before {
   color: var(--alert-orange);
   background-color: var(--alert-bg-orange);
   border: 1px solid var(--alert-orange);
+}
+.response-grid {
+  grid-template-columns: 1fr;
+}
+.response-grid > #hero-image-wrapper {
+  order: 1;
+}
+.response-grid > #primary-content {
+  order: 2;
 }
 .hidden {
   display: none;
