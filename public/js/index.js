@@ -75,7 +75,7 @@ const createResponseContent = function(emailForm) {
   let domFragment = document.createDocumentFragment();
 
   let heroDiv = createNewElement('div', domFragment, {
-    id: 'hero-image-wrapper'
+    id: 'hero-image-wrapper',
   });
   createNewElement('img', heroDiv, {
     id: 'icon-success',
@@ -132,6 +132,10 @@ primaryContent.addEventListener('click', (event) => {
 
 
 });
+
+// To enable styling the response layouts
+// emailForm.input.value = 'ash@loremcompany.com';
+// createResponseContent(emailForm);
 
 // For testing purposes
 // const $f = {

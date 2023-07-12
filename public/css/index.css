@@ -29,7 +29,7 @@ body {
 }
 #mobile-overlay {
   width: 375px;
-  height: 842px;
+  height: 812px;
   position: absolute;
   top: 0;
   left: 0;
@@ -67,11 +67,6 @@ button {
 }
 :focus-visible {
   outline: none;
-}
-.grid-wrapper {
-  position: relative;
-  top: 50vh;
-  transform: translateY(-50%);
 }
 
 /* Utility classes */
@@ -112,6 +107,9 @@ main {
 }
 #desktop-hero-img {
   display: none;
+}
+#icon-success {
+  max-width: 4rem;
 }
 #info-wrapper {
   margin-bottom: 2.5rem;
@@ -160,6 +158,9 @@ li::before {
 .email::placeholder {
   color: var(--dark-navy);
   opacity: 0.5;
+}
+#dismiss-submit {
+  width: 100%;
 }
 
 
@@ -214,6 +215,9 @@ li::before {
     margin: auto;
     border-radius: 2.25rem;
     overflow:hidden;
+    position: relative;
+    top: 50vh;
+    transform: translateY(-50%);
   }
 }
 
@@ -223,6 +227,12 @@ li::before {
   }
   #hero-image-wrapper > img {
     width: 100%;
+  }
+  .response-grid {
+    position: fixed;
+    top: 0;
+    /* bottom: 0; */
+    min-height: 100dvh;
   }
 }
 
@@ -236,9 +246,18 @@ li::before {
 }
 .response-grid > #hero-image-wrapper {
   order: 1;
+  padding: 1.5rem;
+  margin-top: auto;
 }
 .response-grid > #primary-content {
   order: 2;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  justify-content: space-between;
+}
+.response-grid > #primary-content > #email-wrapper {
+  margin-top: auto;
 }
 .hidden {
   display: none;
