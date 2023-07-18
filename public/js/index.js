@@ -1,3 +1,8 @@
+// Ensure an initial history state upon page load
+window.onload = function() {
+  history.replaceState({ message: 'initial state' }, '', '');
+};
+
 const primaryContent = document.getElementById('primary-content');
 const component = document.getElementById('component');
 const componentMain = document.getElementById('main');
@@ -6,6 +11,8 @@ const emailForm = {
   submit: document.getElementById('email-submit'),
   error: document.getElementById('email-error')
 };
+
+let pageState = null;
 
 // Utility function to toggle a class for one or more elements
 const toggleClass = function(style, ...elements) {
@@ -91,7 +98,7 @@ const createResponseContent = function(emailForm) {
   responseHeader.innerHTML = 'Thanks for subscribing!';
 
   let responseParagraph = createNewElement('p', primaryContentDiv, {});
-  responseParagraph.innerHTML = `A confirmation email has been sent to <span class="body-bold">${emailForm.input.value}</span>. Please open it and click the button inside to confrim your subscription`;
+  responseParagraph.innerHTML = `A confirmation email has been sent to <span class="body-bold">${emailForm.input.value}</span>. Please open it and click the button inside to confirm your subscription`;
 
   let responseFooter = createNewElement('div', primaryContentDiv, {
     id: 'email-wrapper',
@@ -119,17 +126,26 @@ primaryContent.addEventListener('click', (event) => {
 
   if(event.target === emailForm.submit) {
 
-    // Just some test code for the moment
     if(!validateEmail(emailForm.input.value)) {
       toggleClass('error', emailForm.input);
       toggleClass('hidden', emailForm.error);
     } else {
-      history.pushState(null, "", 'index.html');
+      history.pushState({ message: 'email submitted' }, '', '');
+      // Update this variable for verification when the user clicks back
+      pageState = 'email submitted';
       createResponseContent(emailForm);
     }
 
   }
 
+});
+
+window.addEventListener('popstate', function(event) {
+
+  if(pageState === 'email submitted') {
+    // User clicked back from 'email submitted' state
+    window.location.reload();
+  }
 
 });
 
