@@ -3,6 +3,7 @@ window.onload = function() {
   history.replaceState({ message: 'initial state' }, '', '');
 };
 
+// Various components needed for email submission and content creation
 const primaryContent = document.getElementById('primary-content');
 const component = document.getElementById('component');
 const componentMain = document.getElementById('main');
@@ -12,6 +13,7 @@ const emailForm = {
   error: document.getElementById('email-error')
 };
 
+// Used to track the current page state and determine when a user clicks back
 let pageState = null;
 
 // Utility function to toggle a class for one or more elements
@@ -54,6 +56,7 @@ const createNewElement = function(el, parentEl, options={}) {
 
 };
 
+// Basic regex validation for email (does not approve all cases)
 const validateEmail = function(emailInput) {
 
   if(typeof emailInput !== 'string' || emailInput.length > 254) {
@@ -118,8 +121,22 @@ const createResponseContent = function(emailForm) {
   toggleClass('response', component);
   toggleClass('response-grid', componentMain);
 
-}
+  // Dismiss button functionality
+  primaryContentDiv.addEventListener('click', (event) => {
 
+    event.preventDefault();
+  
+    if(event.target === dismissButton) {
+  
+      window.location.reload();
+
+    }
+  
+  });
+
+};
+
+// Email submission functionality
 primaryContent.addEventListener('click', (event) => {
 
   event.preventDefault();
@@ -149,18 +166,15 @@ window.addEventListener('popstate', function(event) {
 
 });
 
-// To enable styling the response layouts
-// emailForm.input.value = 'ash@loremcompany.com';
-// createResponseContent(emailForm);
+// For testing purposes - first try at some client-side testing
+// obviously would not be in a production site
+const $f = {
+  emailForm: emailForm,
+  validateEmail: validateEmail
+};
 
-// For testing purposes
-// const $f = {
-//   emailForm: emailForm,
-//   validateEmail: validateEmail
-// };
+export default $f;
 
-// export default $f;
+import testModule from './test.js';
 
-// import testModule from './test.js';
-
-// testModule();
+testModule();

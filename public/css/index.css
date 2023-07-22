@@ -1,10 +1,11 @@
 /* Stylesheet structure
-  - Root styles
-  - Utility classes
-  - Document level styles
-  - Element level styles
-
-
+  - Root styles (line 11)
+  - *For testing* (line 27)
+  - Document level styles (line 53)
+  - Utility classes (line 73)
+  - Element level styles (line 103)
+  - Media queries (line 183)
+  - Low level universal style rules (line 264)
 */
 
 /* Root styles */
@@ -86,7 +87,6 @@ button {
 .relative {
   position: relative;
 }
-
 .btn-primary {
   border: none;
   border-radius: 0.5rem;
@@ -135,7 +135,6 @@ li::before {
 }
 #email-capture > * {
   width: 100%;
-  /* margin-bottom: 0.6em; */
 }
 .label-wrapper {
   display: flex;
@@ -162,7 +161,6 @@ li::before {
 #dismiss-submit {
   width: 100%;
 }
-
 .response-grid {
   grid-template-columns: 1fr;
 }
@@ -181,7 +179,6 @@ li::before {
 .response-grid > #primary-content > #email-wrapper {
   margin-top: auto;
 }
-
 
 /* Media queries */
 @media (min-width: 977px) {
@@ -264,6 +261,7 @@ li::before {
   }
 }
 
+/* Low level universal style rules */
 .error {
   color: var(--alert-orange);
   background-color: var(--alert-bg-orange);

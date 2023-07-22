@@ -25,10 +25,12 @@
 
   <div id="component" class="grid-wrapper">
     <main id="main" class="outer-padding inner-padding">
+      <!-- Important div to manipulate hero image as screen sizes change -->
       <div id="hero-image-wrapper">
         <img id="mobile-hero-img" src="public/images/illustration-sign-up-mobile.svg" alt="Graphic image for header illustration">
         <img id="desktop-hero-img" src="public/images/illustration-sign-up-desktop.svg" alt="Graphic image for illustration in desktop view">
       </div>
+      <!-- Initial content - will be dynamically created for response -->
       <div id="primary-content">
         <div id="info-wrapper" class="margin-block">
           <h1>Stay updated!</h1>
@@ -52,6 +54,6 @@
       </div>
     </main>
   </div>
-  <script src="public/js/index.js"></script>
+  <script src="public/js/index.js" type="module"></script>
 </body>
 </html>

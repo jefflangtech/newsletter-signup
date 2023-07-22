@@ -31,7 +31,7 @@ Users should be able to:
 
 ### Screenshot
 
-![](./screenshot.jpg)
+![](./preview.jpg)
 
 ### Links
 
@@ -44,9 +44,10 @@ Users should be able to:
 
 - Semantic HTML5 markup
 - CSS custom properties
-- Flexbox
 - CSS Grid
 - Mobile-first workflow
+- Regex
+- History API
 
 ### Step by step
 
@@ -77,32 +78,16 @@ Email validation -> submit & load new content -> Submit (dismiss button) & reloa
 3. Design system - the readme file provided didn't seem to match (0:23)
 4. Create a task list (0:10)
 5. HTML and styles for mobile view (1:35)
-6. 
+6. Preliminary validation tests (0:06)
 7. Email validation with regex (2:45) - also implemented some basic testing
 8. Media queries for tablet view (0:27)
 9. Media queries for desktop view (1:00)
 10. Create a functionality plane with task list (0:50)
 11. Code the history update and functionality prior to response content (1:00)
+12. Style mobile response (1:02)
+13. Style desktop response (0:08)
+14. Back button/dismiss button functionality (1:17)
 
-
-
-
-
-To see how you can add code snippets, see below:
-
-```html
-<h1>Some HTML code I'm proud of</h1>
-```
-```css
-.proud-of-this-css {
-  color: papayawhip;
-}
-```
-```js
-const proudOfThisFunc = () => {
-  console.log('🎉')
-}
-```
 
 ### Continued development
 
