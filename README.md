@@ -12,7 +12,6 @@ A solution provide by jefflangtech [Newsletter sign-up form with success message
   - [Built with](#built-with)
   - [Step by step](#step-by-step)
   - [Continued development](#continued-development)
-  - [Useful resources](#useful-resources)
 - [Author](#author)
 
 ## Overview
@@ -36,7 +35,7 @@ Users should be able to:
 ### Links
 
 - Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Live Site URL: [https://jefflangtech.github.io/newsletter-signup/index.html](https://jefflangtech.github.io/newsletter-signup/index.html)
 
 ## My process
 
@@ -88,15 +87,11 @@ Email validation -> submit & load new content -> Submit (dismiss button) & reloa
 13. Style desktop response (0:08)
 14. Back button/dismiss button functionality (1:17)
 
+Total time: 12:14 hrs
 
 ### Continued development
 
-Use this section to outline areas that you want to continue focusing on in future projects. These could be concepts you're still not completely comfortable with or techniques you found useful that you want to refine and perfect.
-
-### Useful resources
-
-- [Example resource 1](https://www.example.com) - This helped me for XYZ reason. I really liked this pattern and will use it going forward.
-- [Example resource 2](https://www.example.com) - This is an amazing article which helped me finally understand XYZ. I'd recommend it to anyone still learning this concept.
+I built this over a long period of time and that did not work out in my favor. I was really working to keep my CSS tight, concise, and flexible but I also, I suppose, did not have good notes, so when I came back to this project after a long enough break I forgot where I was heading to. I felt like I would probably just scrap it all or band-aid it, and this time I opted for the band-aid. Next project I'll iterate on some of the things I learned here, and then I'll also just make sure I get regular touch points so I don't completely forget where I was going with something.
 
 ## Author
 

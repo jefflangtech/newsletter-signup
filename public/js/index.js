@@ -128,6 +128,7 @@ const createResponseContent = function(emailForm) {
   
     if(event.target === dismissButton) {
   
+      
       window.location.reload();
 
     }
