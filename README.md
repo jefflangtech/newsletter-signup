@@ -34,7 +34,7 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
+- Solution URL: [https://www.frontendmentor.io/solutions/newsletter-signup-form-spa-using-vanilla-js-and-regex-D8CE0bZ4Lq](https://www.frontendmentor.io/solutions/newsletter-signup-form-spa-using-vanilla-js-and-regex-D8CE0bZ4Lq)
 - Live Site URL: [https://jefflangtech.github.io/newsletter-signup/index.html](https://jefflangtech.github.io/newsletter-signup/index.html)
 
 ## My process
